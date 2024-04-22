@@ -1,0 +1,53 @@
+Doubts on Github
+
+
+--ls: to see a list of folders and lists
+--cd: to go through any folder or comeout of any folder
+--mkdir: to create one folder 
+or,
+to create multiple folder using mkdir we can use:
+
+----mkdir folder-one, foldertwo/subfolder, folder-three----
+--ls -a: all the hidden folders inside a folder
+--cd ..: to go back to the folder
+--git init: to first initialize the folder(it will add .git file inside it)
+--pwd: to see full path of the current directory you are in
+--git add: to add the file into the tracking Zone (git add testone.txt)
+--git commit -m: used to commit changes to the Git repository along with a message describing the changes(Commit always needs a message)
+--git log: used to display a list of commits in a Git repository
+--git log --oneline: used to display a summarized version of the commit history in a Git repository in one line
+--git config --global user.name: Check the username(can add a new user name + "krushna")
+--git config --global user.email: check the email(can add the email + "sa@gmail.com")
+--git config --global core.editor "core --wait": 
+  
+  [The command git config --global core.editor "core --wait" is used to configure the default text editor for Git.
+
+--global: Indicates that this configuration should be applied globally, affecting all repositories on your system.
+core.editor: Specifies the configuration key for the default text editor.
+"core --wait": Specifies the value for the editor key. In this case, it sets the default text editor to core and includes the --wait option, which tells Git to wait for the editor to close before continuing with the commit.]
+
+--git add .: to track all the files at once
+--git ls-files: list all of the files that are currently being tracked by Git.
+--git branch: to check the branch name which you're currently in
+--git branch "branch-name": creating a branch name
+--git checkout nav-bar: Git switched to the branch called "nav-bar" (used for switching between branches) 
+--git merge nav-bar: Merging the two branches together
+--git stash: temporarily store changes that you don't want to commit immediately in a branch
+--git stash pop: 
+    
+[When you run git stash, Git saves your changes and reverts your working directory to the last commit, effectively cleaning your workspace. You can later apply these changes back with "git stash apply" or "git stash pop" when you're ready to continue working on them]
+
+PTN: When working on some master branch and you want to bring the chages you've made some other branches, then also the "git stash pop" command will work.
+
+--git checkout 985078e: switches your current branch to a specific commit. In this case, 985078e is the commit hash (a unique identifier for a commit) you want to checkout. After running this command, your working directory will reflect the state of the repository at that commit, and you'll be in a "detached HEAD" state, which means you're not on a branch.
+--git reflog: displays a log of all the recent actions you've taken in your repository, including commits, checkouts, resets, and other operations
+--git commit -am "updated the website": Adding and commit at the same time
+--git rebase: reapply commits on top of another base tip. It's commonly used to integrate changes from one branch into another. (cut the branch and establish on the root one)
+--
+
+N.B:
+--git is a software and github is a service provider
+--if there is no (.git) file in it then the folder is not tracked by git
+--Commit before switching between Branches
+--
+
