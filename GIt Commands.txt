@@ -43,7 +43,7 @@ PTN: When working on some master branch and you want to bring the chages you've 
 --git reflog: displays a log of all the recent actions you've taken in your repository, including commits, checkouts, resets, and other operations
 --git commit -am "updated the website": Adding and commit at the same time
 --git rebase: reapply commits on top of another base tip. It's commonly used to integrate changes from one branch into another. (cut the branch and establish on the root one)
---
+--git branch -M main: rename your master branch as main
 
 N.B:
 --git is a software and github is a service provider
