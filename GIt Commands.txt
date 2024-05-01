@@ -45,10 +45,41 @@ PTN: When working on some master branch and you want to bring the chages you've 
 --git rebase: reapply commits on top of another base tip. It's commonly used to integrate changes from one branch into another. (cut the branch and establish on the root one)
 --git branch -M main: rename your existing branch name
 --git remote -v: command lists all the remote repositories associated with your local Git repository, along with their URLs
+--git remote add origin https://github.com/crypticbeing/learn-git-april.git: adding a remote repo for your folder or data
+--git push -u origin main: Push the local repo to the remote repo
+
+
 
 N.B:
 --git is a software and github is a service provider
 --if there is no (.git) file in it then the folder is not tracked by git
 --Commit before switching between Branches
+--If you're creating a remote repo with a readme file, then you're facing some issues. so you need to first taking a pull by 
+  	1. git pull origin main: pull all the data from the remote repo to the local repo
+  	2. git fetch origin: fetch the data of the origin remote repo
+	3. git merge origin/main: merge the changes from the remote main branch (on GitHub) into your local main branch
+  
+--if the error persists, then 
+	1. git merge origin/main --allow-unrelated-histories:
+
+	[The command git merge origin/main --allow-unrelated-histories is used to merge two branches that have diverged and have unrelated histories. This can happen when the branches have 	no common ancestor commit, such as when you're trying to merge a newly initialized remote repository (with a README file) into your local repository that has existing commits.]
+  
+After this you can push all of the code from the local repository to the remote repository using the above code.
+
+--git pull = git fetch(get info but don't put my work) + git merge
+--git pull origin main (changes will be merged to main)
 --
+
+
+Make open Source COntributions
+
+--First create a fork of the project you want to contribute
+--git clone "repo URL": clone the repo
+--read the contributing.md file
+--Install the dependencies necessary
+--run the project on the local environment
+--create a separte branch for bugfix
+--add and commit the file you've updated
+--git push origin "branch-name"
+
 
